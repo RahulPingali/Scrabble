@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4293e3;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.container-fluid {
+    max-width: 80rem;
+    width: 100%;
+    height: 70vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 2rem auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.board {
+    width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#scoreboard {
+    font-size: 1.25rem;
+    color: #495057;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.tile-holder {
+    width: 100%;
+    min-width: 721px;
+    max-width: 80%;
+    height: 100px;
+    margin: 2rem auto 0;
+}
+
+.tile {
+    margin: 0;
+    position: relative;
+    height: 70px;
+    width: 70px;
+}
+
+.btn-col {
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.dropLocations {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.droppable {
+    width: 85px;
+    height: 85px;
+    margin: 5px;
+    opacity: 0; 
+    border: 2px dashed #6c757d;
+    border-radius: 5px;
+}
+
+.droppable.ui-state-hover {
+    background-color: #adb5bd;
+}
+
+.droppable.ui-state-highlight {
+    background-color: #ffe8a1;
+}
